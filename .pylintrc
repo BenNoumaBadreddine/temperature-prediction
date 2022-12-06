@@ -1,0 +1,6 @@
+[FORMAT]
+max-line-length=119
+
+[MASTER]
+disable=
+    C0114, # missing-module-docstring

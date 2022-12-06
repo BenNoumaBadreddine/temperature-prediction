@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "temperature-prediction"
+version = "0.1.0"
+description = ""
+authors = ["Badreddine <badreddine.ben.nouma@gmail.com>"]
+readme = "README.md"
+packages = [{include = "temperature_prediction"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+tensorflow = "2.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
