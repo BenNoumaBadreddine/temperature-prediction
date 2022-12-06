@@ -1,8 +1,8 @@
 import datetime
 import mlflow
 import os
-from data_preparation.data_load import get_data_per_equipment
-from keras_regression_model.keras_regression_functions import mini_batch_gradient_descent_learning_algorithm
+from temperature_prediction.data_preparation.data_load import get_data_per_equipment
+from temperature_prediction.keras_regression_model.keras_regression_functions import mini_batch_gradient_descent_learning_algorithm
 
 equipment_id = '8033'
 train_data, test_data = get_data_per_equipment(equipment_id)

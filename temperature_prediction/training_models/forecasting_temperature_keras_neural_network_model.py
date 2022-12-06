@@ -1,8 +1,8 @@
 import datetime
 import neptune
 import os
-from data_preparation.data_load import get_data_per_equipment
-from keras_regression_model.keras_regression_functions import mini_batch_gradient_descent_learning_algorithm
+from temperature_prediction.data_preparation.data_load import get_data_per_equipment
+from temperature_prediction.keras_regression_model.keras_regression_functions import mini_batch_gradient_descent_learning_algorithm
 
 equipment_id = '8033'
 train_data, test_data = get_data_per_equipment(equipment_id)
@@ -57,3 +57,30 @@ with neptune.create_experiment(name='keras-integration-example', params=PARAMS,
     # plot_prediction_vs_real_time_values(series_test, path_furnace_name, truncated_furnace_test_dict,
     #                                     zone=main_thermocouple_reading)
 
+# pandas~=1.3.5
+# sklearn~=0.0
+# boto3~=1.24.96
+# sqlalchemy~=1.4.42
+# tensorflow~=2.10.0
+# joblib~=1.2.0
+# scikit-learn~=1.0.2
+# botocore~=1.27.96
+# neptune-client
+# mlflow
+# postgresql
+# psycopg2
+# sqlacodegen
+
+# pandas = "^1.5.1"
+# sklearn = "^0.0.post1"
+# boto3 = "^1.26.14"
+# sqlalchemy = "^1.4.44"
+# joblib = "^1.2.0"
+# scikit-learn = "^1.1.3"
+# botocore = "^1.29.14"
+# neptune-client = "^0.16.12"
+# psycopg2 = "^2.9.5"
+# sqlacodegen = "^2.3.0"
+# black = "^22.10.0"
+# pre-commit = "^2.20.0"
+# mypy = "^0.991"
